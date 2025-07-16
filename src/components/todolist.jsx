@@ -4,8 +4,8 @@ function TodoList({todos}) {
   return (
     <ul className="list-group">
        {todos.map((data) => {
-          const {id, name, isComplete } = data;
-          return <TodoItem key={id} name={name} isComplete={isComplete} />;
+          const {id, name, isCompleted } = data;
+          return <TodoItem key={id} name={name} isCompleted={isCompleted} />;
         })}
     </ul>
   );
