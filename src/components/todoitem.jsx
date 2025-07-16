@@ -4,21 +4,21 @@ function TodoItem({ name, isCompleted }) {
       {(isCompleted === true) ? (
       <div>
         <button className="btn btn-sm btn-success">
-          <i class="bi bi-check-square"></i>
+          <i className="bi bi-check-square"></i>
         </button>
         <span className="ms-2 text-decoration-line-through">{name}</span>
       </div>
       ) :(
       <div>
-        <button class="btn btn-sm btn-light">
-          <i class="bi bi-square"></i>
+        <button className="btn btn-sm btn-light">
+          <i className="bi bi-square"></i>
         </button>
         <span className="ms-2">{name}</span>
       </div>
       )}
       <div>
         <button className="btn btn-sm btn-danger">
-          <i class="bi bi-trash"></i>
+          <i className="bi bi-trash"></i>
         </button>
       </div>
     </li>

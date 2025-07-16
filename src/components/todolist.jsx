@@ -1,12 +1,12 @@
 import TodoItem from "./todoitem";
 
-function TodoList() {
+function TodoList({todos}) {
   return (
     <ul className="list-group">
-      <TodoItem name="task1" isCompleted={true} />
-      <TodoItem name="task1" isCompleted={false} />
-      <TodoItem name="task1" isCompleted={false} />
-      <TodoItem name="task1" isCompleted={true} />
+       {todos.map((data) => {
+          const {id, name, isComplete } = data;
+          return <TodoItem key={id} name={name} isComplete={isComplete} />;
+        })}
     </ul>
   );
 }
